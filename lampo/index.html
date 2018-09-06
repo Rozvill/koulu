@@ -9,8 +9,7 @@
     <script src="main.js"></script>
 </head>
 <body>
-<script>
-  function convert() {
+<script>function convert() {
     var temp = document.getElementById("initialtemp");
     var valueSelected = temp.value;
 
@@ -63,24 +62,21 @@ function kToC() {
 function kToF() {
   var k = document.getElementById("tempinput").value;
   return (k - 273.15) * 9 / 5 + 32;
-}
-</script>
-
-<h1>Temperature Converter</h1>
-<div>
-  <h2>Celcius: "C" Fahrenheit: "F" Kelvin: "K"</h2>
-  Temperature:
-  <input type="text" id="tempinput" />
-  <select size="3" id="initialtemp">
-    <option value="c" selected>C</option>
-    <option value="f">F</option>
-    <option value="k">K</option>
-  </select>
-  <br/>
-  <br/>Result:
-  <input type="text" id="result"/>
-  <button type="button" onclick="convert()">Convert</button>
-</div>
-
+}</script>
+  <h1>Temperature Converter</h1>
+  <div>
+    <h2>Celcius: "C" Fahrenheit: "F" Kelvin: "K"</h2>
+    Temperature:
+    <input type="text" id="tempinput" />
+    <select size="3" id="initialtemp">
+      <option value="c" selected>C</option>
+      <option value="f">F</option>
+      <option value="k">K</option>
+    </select>
+    <br/>
+    <br/>Result:
+    <input type="text" id="result"/>
+    <button type="button" onclick="convert()">Convert</button>
+  </div>
 </body>
 </html>
